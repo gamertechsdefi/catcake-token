@@ -18,7 +18,7 @@ export default function Home() {
       <main className="">
         <section className="flex flex-col items-center min-h-screen px-6">
           <div className="flex flex-col justify-between items-center justify-center">
-             <Image src="/images/meme-landing.png" alt="CCT landing page meme" width={400} height={400} className="flex justify-end w-auto h-[85%] mt-8" />
+             <Image src="/images/meme-landing.png" alt="CCT landing page meme" width={400} height={400} className="flex justify-end w-auto h-[75%] mt-8" />
             <div className="text-center flex flex-col items-center mt-8">
               <h1 className="text-yellow-400 text-6xl md:text-7xl font-bold">CATCAKE TOKEN</h1>
               {/* <p className="text-sm md:text-lg">Everyone loves CAKE. Even the CATS</p> */}
