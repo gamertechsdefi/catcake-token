@@ -4,5 +4,9 @@
 body {
   background: #140505;
   color: white;
-  font-family: var(--font-grandstander);
+  font-family: var(--font-fredoka);
+}
+
+h1 {
+  font-family: var(--font-chewy);
 }

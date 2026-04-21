@@ -18,56 +18,49 @@ const Header: React.FC = () => {
   };
 
   const menuItems = [
-    { href: '#about', label: 'about' },
-    { href: '#tokenomics', label: 'tokenomics' },
-    { href: '#roadmap', label: 'roadmap' },
-    { href: '#faq', label: 'faq' },
+    { href: '#about', label: 'About' },
+    { href: '#tokenomics', label: 'Tokenomics' },
+    { href: '#roadmap', label: 'Roadmap' },
+    { href: '#faq', label: 'FAQ' },
   ];
 
   return (
-    <header className="relative z-50">
-      <div className="flex justify-between items-center px-4 md:px-16 py-2 bg-amber-800 text-white">
+    <header className="sticky top-0 z-50">
+      <div className="flex justify-between items-center px-4 md:px-16 py-3 bg-yellow-500 border-b-2 border-yellow-200 text-black">
+        {/* Logo Section */}
         <div className="flex items-center space-x-4">
-          <Image src="/images/logo.jpg" alt='pcat logo' width={70} height={70} className='rounded-2xl' />
-          <nav className="hidden md:flex space-x-4">
-            {menuItems.map((item) => (
-              <a 
-                key={item.href}
-                href={item.href}
-                className="hover:text-yellow-400 transition-colors"
+          <Image src="/images/logo.jpg" alt='pcat logo' width={50} height={50} className='rounded-2xl' />
+          <p className='text-2xl font-semibold'>CatCake</p>
+        </div>
+        
+        {/* Navigation Center */}
+        <nav className="hidden md:flex space-x-8 absolute left-1/2 transform -translate-x-1/2">
+          {menuItems.map((item) => (
+            <a 
+              key={item.href}
+              href={item.href}
+              className="hover:text-yellow-400 transition-colors "
+            >
+              {item.label}
+            </a>
+          ))}
+        </nav>
+        
+        {/* Social Links */}
+        <div className="flex items-center space-x-4">
+          <div className="flex space-x-3">
+            {socialLinks.map((social) => (
+              <a
+                key={social.label}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 w-10 h-10 md:w-11 md:h-11 flex items-center justify-center  rounded-full border-2 border-black shadow-[4px_4px_0_0_rgba(0,0,1,0)] hover:-translate-y-[1px] active:translate-y-0 transition-transform text-white"
+                aria-label={social.label}
               >
-                {item.label}
+                <social.icon className="w-5 h-5 text-black" />
               </a>
             ))}
-          </nav>
-        </div>
-        <div className="flex items-center space-x-4">
-          <div className="flex items-center space-x-4">
-            {/* <button 
-              className="md:hidden z-50"
-              onClick={toggleMenu}
-              aria-label="Toggle menu"
-            >
-              {isMenuOpen ? (
-                <FiX className="w-6 h-6" />
-              ) : (
-                <FaBars className="w-6 h-6" />
-              )}
-            </button> */}
-            <div className="flex space-x-3">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 w-10 h-10 md:w-11 md:h-11 flex items-center justify-center  rounded-full border-2 border-yellow-300 shadow-[4px_4px_0_0_rgba(0,0,1,0)] hover:-translate-y-[1px] active:translate-y-0 transition-transform text-white"
-                  aria-label={social.label}
-                >
-                  <social.icon className="w-5 h-5" />
-                </a>
-              ))}
-            </div>
           </div>
         </div>
       </div>
@@ -93,7 +86,7 @@ const Header: React.FC = () => {
             <a
               key={item.href}
               href={item.href}
-              className="text-white text-2xl hover:text-yellow-400 transition-colors"
+              className="text-black text-2xl hover:text-yellow-400 transition-colors"
               onClick={toggleMenu}
             >
               {item.label}
@@ -110,7 +103,7 @@ const Header: React.FC = () => {
                 aria-label={social.label}
                 onClick={toggleMenu}
               >
-                <social.icon className="w-6 h-6" />
+                <social.icon className="w-6 h-6 text-black" />
               </a>
             ))}
           </div>

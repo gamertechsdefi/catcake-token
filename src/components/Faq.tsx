@@ -14,6 +14,10 @@ const faqData: FaqItem[] = [
     answer: 'Cat Cake ($CCT) is a community-driven token on the Binance Smart Chain that rewards its holders with $CAKE. Just by holding $CCT, you automatically receive $CAKE rewards in your wallet.',
   },
   {
+    question: 'What are the taxes',
+    answer: 'The current taxes are 3% BUY & 5% SELL respectively',
+  },
+  {
     question: 'How do I receive my $CAKE rewards?',
     answer: 'The $CAKE rewards are automatically sent to your wallet. There\'s no need to claim them manually. The frequency of rewards depends on the trading volume.',
   },
@@ -46,7 +50,7 @@ const FaqItemComponent = ({ item, isOpen, onClick }: { item: FaqItem; isOpen: bo
         }`}
       >
         <div className="overflow-hidden">
-          <p className="text-gray-700 break-all pt-4">{item.answer}</p>
+          <p className="text-gray-700 pt-4">{item.answer}</p>
         </div>
       </div>
     </div>
@@ -61,9 +65,9 @@ const Faq = () => {
   };
 
   return (
-    <section className="bg-yellow-50 py-16 px-6">
+    <section className="bg-brown-900 py-16 px-6">
       <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-3xl md:text-5xl font-bold mb-8 text-amber-800">FREQUENTLY ASKED QUESTIONS</h2>
+        <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white">FREQUENTLY ASKED QUESTIONS</h2>
         <div className="space-y-6 text-left">
           {faqData.map((item, index) => (
             <FaqItemComponent

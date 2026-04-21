@@ -14,35 +14,35 @@ const steps: Step[] = [
     title: "ACQUIRE BNB",
     description:
       "Ensure you have BNB in your wallet by transferring or purchasing it from an exchange.",
-    icon: <Wallet className="w-10 h-10 text-amber-800" />,
-    footer: "WALLET",
+    icon: <img src="/images/bnb-logo.png" alt="getting BNB of how to buy" className="w-16 h-16" />,
+    footer: "ACQUIRE",
   },
   {
     title: "SWAP BNB FOR $CCT",
     description:
       "Go to PancakeSwap, select BNB and $CCT, and execute the swap.",
-    icon: <img src="/images/logo.jpg" alt="token icon" className="w-10 h-10 text-amber-800 rounded-full" />,
-    footer: "$CCT",
+    icon: <img src="/images/cct-3d.png" alt="CCT Buy Explainer of how to buy" className="w-16 h-16 text-amber-800" />,
+    footer: "SWAP",
   },
   {
     title: "EARN $CAKE",
     description:
       "Hold your $CCT tokens and watch your $CAKE rewards accumulate over time.",
-    icon: <Coins className="w-10 h-10 text-amber-800" />,
-    footer: "CAKE",
+    icon: <img src="images/cake-3d.png" alt="PancakeSwap Reward Explainer of how to buy" className="w-16 h-16 text-amber-800" />,
+    footer: "EARN REWARD",
   },
 ];
 
 const HowToBuy: FC = () => {
   return (
-    <section className="bg-yellow-100 py-12">
+    <section className="bg-yellow-100 py-32">
       <div className="max-w-5xl mx-auto px-6 text-center">
         {/* Header */}
-        <h2 className="text-3xl font-extrabold text-gray-900 mb-4">
+        <h1 className="text-5xl md:text-7xl text-amber-800 mb-4">
           HOW TO BUY
-        </h2>
+        </h1>
         <p className="text-gray-700 max-w-2xl mx-auto mb-10">
-          LET ME SHARE THE DETAILS TO YOU ON HOW TO BUY YOUR BELOVED $BULL
+          LET ME SHARE THE DETAILS TO YOU ON HOW TO BUY YOUR BELOVED $CCT
         </p>
 
         {/* Steps */}
