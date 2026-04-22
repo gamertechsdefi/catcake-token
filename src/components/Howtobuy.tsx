@@ -35,7 +35,7 @@ const steps: Step[] = [
 
 const HowToBuy: FC = () => {
   return (
-    <section className="bg-yellow-100 py-32">
+    <section className="bg-yellow-100 py-32" id="howtobuy">
       <div className="max-w-5xl mx-auto px-6 text-center">
         {/* Header */}
         <h1 className="text-5xl md:text-7xl text-amber-800 mb-4">

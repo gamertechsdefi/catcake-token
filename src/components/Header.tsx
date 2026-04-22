@@ -20,7 +20,7 @@ const Header: React.FC = () => {
   const menuItems = [
     { href: '#about', label: 'About' },
     { href: '#tokenomics', label: 'Tokenomics' },
-    { href: '#roadmap', label: 'Roadmap' },
+    { href: '#howtobuy', label: 'How to buy' },
     { href: '#faq', label: 'FAQ' },
   ];
 

@@ -55,7 +55,7 @@ export default function Tokenomics() {
   };
 
   return (
-    <section className="bg-yellow-200 flex flex-col items-center px-6 py-32">
+    <section className="bg-yellow-200 flex flex-col items-center px-6 py-32" id='tokenomics'>
       <h1 className="text-5xl md:text-6xl text-amber-800">TOKENOMICS</h1>
       
       

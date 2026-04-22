@@ -27,13 +27,13 @@ const faqData: FaqItem[] = [
   },
   {
     question: 'What is the contract address?',
-    answer: 'The official contract address is: [YOUR_CONTRACT_ADDRESS_HERE]. Please be careful and only use the official address.',
+    answer: 'The official contract address is: 0x8489c022a10a8d2a65eb5aF2b0E4aE0191e7916D. Please be careful and only use the official address.',
   },
 ];
 
 const FaqItemComponent = ({ item, isOpen, onClick }: { item: FaqItem; isOpen: boolean; onClick: () => void }) => {
   return (
-    <div className="bg-yellow-100 text-black p-6 rounded-xl shadow-md border border-gray-200">
+    <div className="bg-yellow-100 text-black p-6 rounded-xl shadow-md border border-gray-200" id='faq'>
       <button
         onClick={onClick}
         className="w-full flex justify-between items-center text-left"

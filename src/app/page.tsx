@@ -39,7 +39,7 @@ export default function Home() {
           
         </section>
 
-        <section className="flex justify-center px-6 py-16">
+        <section className="flex justify-center px-6 py-16" id="about">
           <div className="border-t-2 border-l-2 border-b-6 border-r-6 p-6 rounded-2xl flex flex-col items-center text-center max-w-4xl w-full">
           <h1 className="text-5xl md:text-7xl text-yellow-500 mb-4">EVERYONE LOVES CAKE. EVEN THE CATS</h1>
           <p className="pb-4 md:text-lg">Built for meme lovers and community believers, it turns playful chaos into shared hype. 
@@ -59,7 +59,7 @@ export default function Home() {
 
         <Faq />
 
-        <section className="flex flex-col items-center text-center px-6 py-16">
+        <section className="flex flex-col items-center text-center px-6 py-16" id="community">
           <h1 className="text-3xl md:text-5xl font-bold text-yellow-400">You love Cakes too?</h1>
           <p>Join us in the Community to interact with more Cats that loves cakes</p>
           <div className="flex flex-row justify-center gap-8 mt-8">
