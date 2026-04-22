@@ -1,6 +1,8 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 interface TokenMetrics {
   totalSupply?: string;
@@ -89,6 +91,17 @@ export default function Tokenomics() {
           <h1 className="text-3xl">$CAKE</h1>
           <p className="text-lg">REWARDS</p>
         </div>
+      </div>
+
+      <div className='mt-4 flex flex-col md:flex-row gap-3'>
+        <Link href="https://www.firescreener.com/bsc/0x8489c022a10a8d2a65eb5aF2b0E4aE0191e7916D" className='flex items-center gap-2 justify-center p-4 bg-black rounded-xl border-t-2 border-l-4 border-r-4 border-b-4 border-amber-500'>
+          <Image src="/images/firescreener-logo.webp" alt="Firescreener logo" width={300} height={300} className="w-6 h-auto" />
+          <p className='font-semibold text-xl md:text-2xl'>FireScreener</p>
+        </Link>
+         <Link href="https://bscscan.com/token/0x8489c022a10a8d2a65eb5aF2b0E4aE0191e7916D" className='flex items-center gap-2 justify-center p-4 bg-black rounded-xl border-t-2 border-l-4 border-r-4 border-b-4 border-amber-500'>
+          <Image src="/images/bscscan-logo.webp" alt="Firescreener logo" width={300} height={300} className="w-6 h-auto" />
+          <p className='font-semibold text-xl md:text-2xl'>BSCScan</p>
+        </Link>
       </div>
     </section>
   );

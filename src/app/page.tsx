@@ -4,11 +4,9 @@ import HowToBuy from "@/components/Howtobuy";
 import Faq from "@/components/Faq";
 import Tokenomics from "@/components/Tokenomics";
 import { FaTelegram, FaXTwitter } from "react-icons/fa6";
-import { getResponsiveAddress } from "@/lib/formatters";
-import { Copy } from "lucide-react";
+import CopyButton from "@/components/CopyButton";
 
 const CA = "0x8489c022a10a8d2a65eb5aF2b0E4aE0191e7916D";
-const { short: shortCA, full: fullCA } = getResponsiveAddress(CA);
 
 export default function Home() {
 
@@ -24,14 +22,7 @@ export default function Home() {
               {/* <p className="text-sm md:text-lg">Everyone loves CAKE. Even the CATS</p> */}
               <div className="flex flex-col md:flex-row gap-2 mt-2">
 
-                <Link href="https://www.firescreener.com/bsc/cct" className="flex flex-row gap-4 items-center bg-yellow-700 border-b-4 border-r-4 border-t-2 border-l-4 border-yellow-400 px-4 py-2 font-semibold rounded-full">
-                  <div className="">
-                    <span>CA:</span>
-                    <span className="hidden md:inline">{fullCA}</span>
-                    <span className="md:hidden">{shortCA}</span>
-                  </div>
-                  <Copy size={15} className="" />
-                </Link>
+                <CopyButton address={CA} />
               </div>
             </div>
 
